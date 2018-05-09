@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>ITEL</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="fonts.css">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="js/main.js"></script>
+
+</head>
+
+<body>
+  <header>
+  <div class="menu_bar">
+    <a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+  </div>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#"><span class="icon-house"></span>¿Quiénes somos?</a></li>
+      <li><a href="#"><span class="icon-suitcase"></span>Nuestra ubicación.</a></li>
+  <li><a href="#"><span class="icon-mail"></span>Perfil del egresado.</a></li>
+      <li class="submenu">
+        <a href="#"><span class="icon-rocket"></span>Contacto.<span class="caret icon-arrow-down6"></span></a>
+        <ul class="children">
+          <li><img class="ig" src="imagenes/instagram.png"><a href="#">Instagram. <span class="icon-dot"></span></a></li>
+          <li><img class="fb" src="imagenes/facebook.png"><a href="#">Facebook. <span class="icon-dot"></span></a></li>
+          <li><img class="web" src="imagenes/web.png"><a href="#">Página oficial. <span class="icon-dot"></span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="form">
+  <div class="thumbnail"><img src="imagenes/logo1.png"/></div>
+  <form class="login-form">
+    <input type="text" placeholder="Usuario"/>
+    <input type="password" placeholder="Contraseña"/>
+    <button>Ingresar</button>
+    <p class="message">¿Aun no te registraste? <a href="inicio.html"> Create una cuenta.</a></p>
+  </form>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+    <script>
+	var canvas = document.getElementById('dibujo'); /*variable que ocupa un lugar en la memoria ram, guarda un objeto de tipo canvas por su id, el id tiene q ser el mismo q en la etiqueta html*/
+	var context = canvas.getContext('2d'); /*genera el contexto, es donde vamos a dibujar todas las lineas curvas y circunferencias*/
+
+		context.beginPath(); /*quiere decir que va a comenzar con nuestro dibujito*/
+		context.moveTo(0,1); /*mover el lapiz*/
+		context.lineTo(0,4); /*dibujar la linea*/
+		context.lineTo(16,4);
+		context.lineTo(16,1);
+		context.moveTo(0,7);
+		context.lineTo(0,9);
+		context.lineTo(16,9);
+		context.lineTo(16,7);
+		context.moveTo(0,13);
+		context.lineTo(0,16);
+		context.lineTo(16,16);
+		context.lineTo(16,13);
+		context.closePath(); /*para cerrar el dibujo*/
+		context.lineWidth = 2; /*grosor dela linea*/
+		context.strokeStyle = "white"; /*es el color de las lineas del perimetro de la figura*/
+		context.stroke(); /*cierra el comando*/
+		context.fillStyle = "rgba(255, 255, 255,1.0)"; /*relleno de la figura*/
+		context.fill();	/*cierra el comando*/
+
+
+	</script>
+
+
+
+
+</body>
+
+</html>

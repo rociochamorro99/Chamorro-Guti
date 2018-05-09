@@ -1,0 +1,281 @@
+/* Form */
+.form {
+  position: static;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+
+.form .thumbnail img {
+  display: block;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  background: rgb(0,0,0);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: rgba(30, 55, 153,1.0);
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0px;
+  background: rgba(200, 200, 200,0.7);
+  background-attachment:fixed; /* fondo fijo */
+  background-size: 100% 100%;
+  background-repeat:none;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body:before {
+  content: "";
+  position: static;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-size: 25px;
+  float: none;
+  text-align: center;
+}
+#dibujo{
+		height:30px;
+		width:30px;
+	}
+#titulo{
+  	width:60%;
+		height:35px;
+		font-size:25px;
+		padding-top:10px;
+		padding-bottom:20px;
+		margin:0px;
+		font-family: verdana;
+	}
+#iconomenu{
+
+	padding-top:10px;
+
+}
+#logo{
+  display: block;
+
+}
+
+canvas{
+	height:30px;
+	width:30px;
+}
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {background:#FEFEFE;}
+
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	background: rgb(0,0,0);
+	z-index:1000;
+	max-width: 1000px;
+	width:100%;
+	margin: 20px auto;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#fff;
+}
+header nav ul li:hover a {
+	color: rgb(0,0,0)
+}
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:rgb(50,50,50);
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 100000px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:rgb(0,0,0);
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 15px;
+		color: rgb(255,255,255);
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 40%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: -24.6px auto;
+	}
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+  .ig {
+  float: left;
+  width: 65px;
+  height: 50px;
+}
+.fb {
+  margin-left: 18px;
+  margin-top: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+.web{
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+}
